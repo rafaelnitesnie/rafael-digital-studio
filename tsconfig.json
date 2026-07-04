@@ -6,6 +6,10 @@
     },
     "jsx": "react-jsx",
     "allowJs": true,
-    "checkJs": false
-  }
+    "checkJs": false,
+    "noEmit": true,
+    "ignoreDeprecations": "6.0"
+  },
+  "include": ["src", "vite.config.js"],
+  "exclude": ["node_modules", "dist"]
 }
