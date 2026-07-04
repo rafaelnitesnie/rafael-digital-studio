@@ -1,5 +1,5 @@
-import { cta } from "../content.js";
-import { ButtonLink, Reveal } from "./ui.jsx";
+import { brand, cta } from "../content.js";
+import { ButtonLink, Eyebrow, Reveal } from "./ui.jsx";
 
 export default function CTA() {
   return (
@@ -15,17 +15,25 @@ export default function CTA() {
             aria-hidden="true"
           />
           <div className="relative">
-            <h2 className="mx-auto max-w-2xl text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-[2.6rem] lg:leading-[1.15]">
+            <div className="flex justify-center">
+              <Eyebrow>{cta.eyebrow}</Eyebrow>
+            </div>
+            <h2 className="mx-auto mt-6 max-w-2xl text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-[2.6rem] lg:leading-[1.15]">
               {cta.title}
             </h2>
             <p className="mx-auto mt-5 max-w-xl text-pretty text-base text-zinc-400 sm:text-lg">
               {cta.subtitle}
             </p>
             <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <ButtonLink href={cta.button.href}>{cta.button.label}</ButtonLink>
+              <ButtonLink href={brand.contactHref}>
+                {cta.primaryButton.label}
+              </ButtonLink>
+              <ButtonLink href={cta.secondaryButton.href} variant="secondary">
+                {cta.secondaryButton.label}
+              </ButtonLink>
             </div>
-            <p className="mt-6 text-xs text-zinc-600">
-              Resposta em até 1 dia útil · primeira conversa sem compromisso
+            <p className="mx-auto mt-8 max-w-sm text-xs leading-relaxed text-zinc-600">
+              {cta.hint}
             </p>
           </div>
         </Reveal>

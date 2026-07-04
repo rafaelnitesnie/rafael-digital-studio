@@ -286,10 +286,13 @@ export const faq = {
 };
 
 export const cta = {
-  title: "Tem uma ideia, processo manual ou projeto que precisa sair do papel?",
+  eyebrow: "Contato",
+  title: "Vamos falar sobre o seu projeto?",
   subtitle:
-    "Me conte o contexto e eu te ajudo a definir por onde começar — sem compromisso.",
-  button: { label: "Me chamar para conversar", href: "#contato" },
+    "Me conta o contexto. Eu te ajudo a definir por onde começar — sem questionário longo, sem compromisso.",
+  hint: "Envie uma descrição simples do que você quer construir e eu te retorno com um recorte inicial de escopo.",
+  primaryButton: { label: "Falar sobre um projeto", href: "#contato" },
+  secondaryButton: { label: "Ver tipos de entrega", href: "#tipos" },
 };
 
 export const footer = {

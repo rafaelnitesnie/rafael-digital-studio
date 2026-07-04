@@ -496,7 +496,7 @@ function AssemblyScene() {
               from={{ x: -120, y: 40, z: 260, rotateY: -28 }}
               to={{ z: 70 }}
               delay={1.75}
-              className="absolute -left-3 bottom-14 sm:-left-10"
+              className="absolute left-0 bottom-6 sm:-left-10 sm:bottom-14"
             >
               <div className="animate-float-slow rounded-xl border border-white/10 bg-ink-900/95 p-3 shadow-[0_24px_48px_-16px_rgba(0,0,0,0.7)] backdrop-blur-xl">
                 <div className="flex items-center gap-1.5">
@@ -520,7 +520,7 @@ function AssemblyScene() {
               from={{ x: 120, y: -50, z: 300, rotateY: 28 }}
               to={{ z: 95 }}
               delay={1.95}
-              className="absolute -right-2 -top-5 sm:-right-8 sm:top-8"
+              className="absolute right-0 top-1 sm:-right-8 sm:top-8"
             >
               <div className="animate-float rounded-xl border border-white/10 bg-ink-900/95 px-3.5 py-2.5 shadow-[0_24px_48px_-16px_rgba(0,0,0,0.7)] backdrop-blur-xl">
                 <div className="flex items-center gap-2.5">
