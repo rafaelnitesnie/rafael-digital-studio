@@ -119,6 +119,10 @@ export const demoProjects = {
     "Exemplos de escopo para mostrar como estruturo cada tipo de projeto. São demonstrações de formato de trabalho, não casos de clientes reais.",
   disclaimer:
     "Todos os projetos abaixo são exemplos ilustrativos de escopo e entrega — não representam clientes reais.",
+  liveDemo: {
+    label: "Demo de checkout integrado",
+    href: "/demo-checkout",
+  },
   items: [
     {
       tag: "Landing page",

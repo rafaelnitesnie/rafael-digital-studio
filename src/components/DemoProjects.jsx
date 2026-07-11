@@ -80,6 +80,16 @@ export default function DemoProjects() {
           <Icon name="target" className="mt-0.5 h-4 w-4 shrink-0 text-zinc-600" />
           {demoProjects.disclaimer}
         </p>
+        <p className="mt-4 text-sm text-zinc-500">
+          Demonstração interativa ao vivo:{" "}
+          <a
+            href={demoProjects.liveDemo.href}
+            className="inline-flex items-center gap-1 text-zinc-300 underline decoration-white/20 underline-offset-4 transition-colors hover:text-accent-300 hover:decoration-accent-300/40"
+          >
+            {demoProjects.liveDemo.label}
+            <Icon name="arrow" className="h-3.5 w-3.5" />
+          </a>
+        </p>
       </Reveal>
     </Section>
   );
